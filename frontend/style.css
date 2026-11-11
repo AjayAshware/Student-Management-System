@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #243247;
+}
+
+#studentForm {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgb(0, 0, 0, 0.1);
+}
+
+#studentForm label {
+    display: block;  /*har label alag line me aaega*/
+    margin-bottom: 6px; /**/
+    font-weight: bold;
+    color: #333;
+}
+
+#studentForm input {
+    width: 100%;  
+    padding: 11px;  /*input ke andar space dega*/
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;/**/
+    font-size: 15px;
+    outline: none;
+}
+
+#studentForm input:focus {
+    border: 2px solid blue;
+}
+
+#submitBtn, #cancelUpdate {
+    width: 50%;
+    padding: 12px;
+    margin-left: 25%;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#submitBtn:hover, #cancelUpdate:hover {
+    background-color: #243247;
+}
+
+.searchBox {
+    position: relative;
+    width: 60%;
+    margin: 25px 0;
+    margin-bottom: 5px;
+}
+
+#searchStudent {
+    width: 100%;
+    padding: 10px;
+    padding-right: 70px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#clearSearch {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #bcbca7;
+    color: white;
+    padding: 6px 10px;
+    margin: 0;
+}
+
+#studentTableBody {
+    width: 100%;
+    border-collapse: collapse; /*Table ke borders ek saath merge ho jayenge.*/
+    background-color: white;
+    margin-top: 15px;
+}
+
+#studentTableBody th,
+#studentTableBody td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+#studentTableBody th {
+    background-color: #243247;
+    color: white;
+}
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.deleteBtn {
+    background-color: #dc2626;
+}
+
+.updateBtn {
+    background-color: #16a34a;
+}
+
+#studentTableRows tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tableContainer {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+        width: 100%;
+    }
+
+    #studentForm {
+        width: 100%;
+        max-width: 450px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

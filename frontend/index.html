@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h1>Student Management System</h1>
+
+    <form id="studentForm">
+
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter Student Name..">
+
+        <label>Roll Number</label>
+        <input type="number" id="rollNum" placeholder="Enter Student Roll Number..">
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter Student Email">
+
+        <label>Subject</label>
+        <input type="text" id="subject" placeholder="Enter Student Subject..">
+
+        <label>Age</label>
+        <input type="number" id="age" placeholder="Enter Student age..">
+
+        <button type="submit" id="submitBtn">Add Student</button>
+        <button type="button" id="cancelUpdate" style="display: none;">Cancel Update</button>
+        <p id="message"></p>
+    </form>
+
+    <div class="searchBox">
+    <input type="text" id="searchStudent" placeholder="search by name or roll number">
+    <button type="button" id="clearSearch">Clear</button>
+    </div>
+
+    <div class="tableContainer">
+    <table id="studentTableBody">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Roll Number</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentTableRows"></tbody>
+    </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

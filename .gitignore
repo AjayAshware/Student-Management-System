@@ -1,0 +1,13 @@
+
+# Backend generated files
+backend/target/
+backend/.idea/
+
+# IntelliJ settings
+.idea/
+
+# Database credentials
+backend/src/main/resources/application.properties
+
+# Windows files
+Thumbs.db
